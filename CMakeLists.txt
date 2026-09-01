@@ -10,10 +10,14 @@ endif()
 # Source files
 set(SOURCES
         main.cpp
+        include/Resource.h
+        include/DomainTypes.h
+        src/Resource.cpp
 )
 
 # Define the executable target
-add_executable(cpp-oop-review ${SOURCES})
+add_executable(cpp-oop-review ${SOURCES}
+        src/Resource.cpp)
 
 # Require C++26
 set_target_properties(cpp-oop-review PROPERTIES
